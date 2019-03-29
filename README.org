@@ -1,0 +1,17 @@
+
+* Automation Synergy ND
+A Not for Profit - Not registered Meet Up Group for automation professionals seeking opportunities to 
+network and colaborate on openly shared projects with the goals of 
+1) Offering real world - extreme use case product sampling and rewiew
+2) contributing to the Automation ECOSYSTEM as a whole
+3) affecting change in the automation industry as far as is possible for observably better methods 
+
+* Free PLC Programming Training
+synergy PLC Class Materials are archived and developed here. 
+
+Previous lectures - from weeks prior
+Main - Most recenly given lectures and PLC files
+
+
+** TODO Commit staged files from Bedrock and Commit scenarios 
+
