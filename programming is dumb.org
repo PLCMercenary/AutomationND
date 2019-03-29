@@ -1,0 +1,164 @@
+#+STARTUP: showeverything
+#+title:  Thinking like a Programmer
+#+author: Sean Terrell
+#+email:  AutomationSynergyND@gmail.com
+#+REVEAL_HLEVEL: 1
+
+*  *How to think like a Programmer*
+get your neck beards ready
+
+**  Even if you dont think that you can
+
+** And why learning programming in ST is good for beginners
+Cuz it is 
+
+* How Smart are they?
+
+* *Learning* to Program is hard
+the learning part. The programming part isnt so bad 
+
+#+ATTR_REVEAL: :frag roll-in 
+- Programming doesnt feel like other skills.
+- Languages are scary 
+- The Environment is scary
+- Connecting to a live system is terrifying
+- Going online is 53 steps, and a special cable - and Im totally lost how (other-tech) knows what IP addresses to use
+- Great programmers and excellent techs <> great communicators
+
+#+BEGIN_NOTES
+Programming is abstract in many cases, its not clear what exacly this GIANT 
+6 branch rung wiht mov and cpt and XOR and PV CV to an ALIAS tag HUH??
+*You cant just install the software and it work, you need a half a day to 
+build your software 
+*What do you mean Virtual machine
+*Serial cable? like from radio shack? 
+*I have to set my network for what? I plugged it in and there are lights. That means internet right?
+#+END_NOTES
+
+** Barriers to Entry
+
+#+ATTR_REVEAL: :frag appear
+- =$$$$$ Money= 
+- Harware is expensive, Software is rediculously expensive 
+- vendor training is insanely expensive
+  - always SUPER specific, Studio5K V31 AOI's for Powerflex Drives 
+  - or just not worth companies sending people. 
+- online learning is hard to finish. Life does happen... daily
+- automation and integration companies are very protective of their little slices. 
+
+#+BEGIN_NOTES
+Part of keeping Synergy as an interactive course, not self paced, 
+is the desire to drive motivation and keep yall interested by getting to put your hands on stuff
+#+END_NOTES
+
+** Starting out means asking questions... and getting bad advice
+#+ATTR_REVEAL: :frag (none fade-in fade-in fade-in fade-in fade-in)
+- Check out r/PLC somtime
+- What trainer kit should I buy? 
+- how can i learn studio 5K
+- What should I switch my major too?
+- Im just starting out and my company is making me work 60 hours per week. And I dont like it.
+- HOW CAN I LEARN PLC?
+-
+
+* Programming Wisdom  
+1. The platform or architecture doesnt REALLY matter.  
+2. All programming, ALL programming languages, Ladder, SFC, FB, CFC, Python, Java, Markdown. 
+   ALL programming languages are made to be interpreted by HUMANS.
+3. There are only about 8 or 9 tasks that make up the creation of any program or project it just differs in the specific words and 
+   sometimes the method is laid out in a different manner. 
+   but a for loop is still a for loop. 
+
+
+* Comments are Code 
+#+ATTR_REVEAL: :frag roll-in 
+*If comments were code, Literally no machines would run.
+not one  
+
+#+ATTR_REVEAL: :frag fade-in
+#+BEGIN_QUOTE
+Comments are not there to explain the Code
+
+THE CODE IS CREATED TO EXPLAIN THE COMMENTS TO THE CONTROLLER
+#+END_QUOTE
+
+
+
+#+BEGIN_NOTES
+
+We dont put comments because they are supposed to be for "other Programers"
+And thats great, but I have to make it work first
+
+and sometimes I dont want to comment unless I am sure of what it does.... and that could be questionable
+
+Comment is really for ourselves though right? after the weekend, and this thing isnt working.. wait what did i do
+#+END_NOTES
+
+*  Dont Try to learn code programming language or hardware
+Talk through your formula in english 
+#+ATTR_REVEAL: :frag fade-in
+-Teach students in English.  
+- or Afrikkans, or Dutche, 
+-Whatever you normally speak. Write your program with sentences. 
+-write an Algorithm that calculates the correct outputs.   
+ 
+
+
+* Make a Variable  
+- [ ] Name : something to identify that bucket of data
+- [ ] type - PLC and EMBEDED CONTROLS Required
+- [ ] initVal : Maybe? at least know why not
+
+* Expression  
+-arithmetic
+ 
+-comparison
+
+
+
+ 
+
+* config 
+# Neither generate table of contents nor section numbers
+#+OPTIONS: toc:nil num:nil
+
+# Enable: browser history, fragment IDs in URLs, mouse wheel, links between presentations
+#+OPTIONS: reveal_history:t reveal_fragmentinurl:t
+#+OPTIONS: reveal_mousewheel:t reveal_inter_presentation_links:t
+
+# Disable separate PDF pages for each fragment.  Just use one per slide.
+#+OPTIONS: reveal_pdfseparatefragments:nil
+
+# Enable smart quotes
+#+OPTIONS: ':t
+
+# Transition styles: none/fade/slide/convex/concave/zoom/cube
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: blood 
+
+#+REVEAL_PLUGINS: (notes search zoom)
+
+# The following variables are non-standard.
+# Do not display TOC-progress on title slide.
+#+REVEAL_TITLE_SLIDE_STATE: no-toc-progress
+# Do not display TOC-progress on TOC slide.
+#+REVEAL_TOC_SLIDE_STATE: no-toc-progress
+# Do not include TOC slide in TOC-progress.
+#+REVEAL_TOC_SLIDE_CLASS: no-toc-progress
+# Use different heading for TOC.
+#+REVEAL_TOC_SLIDE_TITLE: Agenda
+
+# REVEAL_EXTRA_CSS: ./reveal.js/plugin/toc-progress/toc-progress.css
+# REVEAL_EXTRA_CSS: ./reveal.js/css/theme/toc-style.css]]
+
+
+# The following creates an empty footer, for which the css style defines
+# a height that agrees with the TOC-progress footer’s height.
+# In this way, the footer’s height is taken into account by reveal.js’s
+# size calculations.
+#+REVEAL_SLIDE_FOOTER: <br>
+#+OPTIONS: reveal_toc_footer:t
+
+ 
+ 
+ 

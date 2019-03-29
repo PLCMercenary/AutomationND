@@ -1,0 +1,14 @@
+
+* Slide Tags 
+#+title:  IEC 61131-3 standard 
+#+author: Sean Terrell
+#+email: AutomationSynergyND@gmail.com
+#+date:
+
+
+#+REVEAL_HLEVEL: 2
+
+
+* List of randoms 
+
+
