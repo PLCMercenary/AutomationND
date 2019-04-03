@@ -2,7 +2,8 @@
   
   #+email:  AutomationSynergyND@gmail.com
   #+REVEAL_HLEVEL: 1
-
+  #+reveal_root:  https://cdn.jsdelivr.net/reveal.js/3.0.0
+ 
 *  *How to think like a Programmer*
 get your neck beards ready
 
