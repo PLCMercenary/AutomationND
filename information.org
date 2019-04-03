@@ -1,0 +1,26 @@
+#+Title: Some handy info to have in your pocket
+  
+
+
+* Next Meetings
+
+| date  | Topics               | Locaton | Note |  Time |
+|-------+----------------------+---------+------+-------|
+| 1 Apr | Review and           |   31200 |      | 19:00 |
+|       | re-record            |         |      |       |
+| 3 May | History, Control     |         |      |       |
+|       | theory, more complex |         |      |       |
+|       |                      |         |      |       |
+
+* This file will be a catch all for anything that i thunk would be benificial 
+
+
+*  Link to the online session recording
+- Well... So I Messed up and let it get deleted, session sundy, 
+
+* Udemy.com classes
+[[color:green][Vladimir Romanov]] 
+Paul Lynn
+Fred PC
+
+

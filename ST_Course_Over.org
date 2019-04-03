@@ -1,10 +1,11 @@
 
 #+STARTUP: showeverything
 # Slide Tags 
-#+title:  Synergy Structured Text Program Overview
-#+author: Sean Terrell
-#+email: AutomationSynergyND@gmail.com
-#+REVEAL_HLEVEL: 1
+ #+title:  Synergy Structured Text Program Overview
+ #+author: Sean Terrell
+ #+email: AutomationSynergyND@gmail.com
+ #+REVEAL_HLEVEL: 1
+ #+reveal_root: http://cdn.jsdelivr.net/reveal.js/3.0.0 
 
 * Welcome to Automation Synergy
 Automation Nerds Welcome 
@@ -121,7 +122,6 @@ Next Steps:
 
 # reveal tags 
 # reveal_root: /Users/twinflame_automation/Documents/G/GitHub/reveal.js
-#+reveal_root: http://cdn.jsdelivr.net/reveal.js/3.0.0 
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
 #+OPTIONS: reveal_width:1200 reveal_height:800 
