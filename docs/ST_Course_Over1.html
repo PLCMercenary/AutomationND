@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Synergy Structured Text Program Overview</title>
+<meta name="author" content="(Sean Terrell)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/league.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Synergy Structured Text Program Overview</h1><h2 class="author">Sean Terrell</h2><p class="date">Created: 2019-04-03 Wed 05:22</p>
+</section>
+
+<section>
+<section id="slide-orgb3281a3">
+<h2 id="orgb3281a3">Welcome to Automation Synergy</h2>
+<p>
+Automation Nerds Welcome 
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org8f9dcaa">
+<h2 id="org8f9dcaa">Sean "Scooter" Terrell</h2>
+<p>
+<b>THE</b> Nerd 
+</p>
+<ul>
+<li class="fragment fade-in">SCADA Tech @ TIGA - Bakken Commissioning and Programming for 1.5 years</li>
+<li class="fragment fade-in">14/14 rotation - Seeking partners that can hold classes when I am home</li>
+<li class="fragment fade-in">Non-traditional path to automation and programming</li>
+<li class="fragment fade-in">Navy Subs &gt; Government &gt; Manfacturing Equ OEM &gt; Drilling &gt; O&amp;G Production</li>
+<li class="fragment fade-in">Didnt Learn PLC or "automation" until Step 7 in 2014.</li>
+
+</ul>
+<aside class="notes">
+<p>
+Programming is programming, Controls is controls. Learn the concepts The system irrelevent
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orga427b4b">
+<h2 id="orga427b4b">Synergy</h2>
+<p>
+n.	The interaction of two or more agents or forces so that their combined effect is greater than the sum of their individual effects.
+n.	Cooperative interaction among groups, especially among the acquired subsidiaries or merged parts of a corporation, that creates an enhanced combined effect
+</p>
+
+</section>
+<section id="slide-orga419370">
+<h3 id="orga419370">What is Synergy NoDak?</h3>
+<ul class="fragment appear">
+<li>A community of automation professionals that meet to share knowledge</li>
+<li>An opportuniny for nerds to do projects with interesting harware and software</li>
+<li>Mostly Its Scooter rambling about some SCADA or IIoT junk</li>
+<li>Free PLC and Automation programming classes.</li>
+<li>Networking and Company / Client independant information sharing</li>
+<li>Its a platform providing a voice from the deckplate</li>
+
+</ul>
+
+
+</section>
+<section id="slide-org67df8cf">
+<h3 id="org67df8cf">Automation Synergy has the opportunity to affect the entire automation industry</h3>
+
+</section>
+<section id="slide-orge6b54fe">
+<h3 id="orge6b54fe">I dont need free classes</h3>
+<p>
+Awesome, we can use your knowledge!!
+</p>
+<ul class="fragment appear">
+<li>Plans for Vendor demos</li>
+<li>Plans for sponsored events</li>
+<li>Plans for live online programming lessons</li>
+<li>Potential partners for online forums / video hosting</li>
+<li>Looking for Guest Lectures</li>
+<li>Looking for Video Editing Assistance</li>
+<li>Seeking additional opportunities to partner with businesses and vendors</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga4d6d71">
+<h2 id="orga4d6d71"><b>Automation</b> Programming</h2>
+<p>
+Notice I did not say PLC Programming? 
+</p>
+<aside class="notes">
+<p>
+All aspects of automation are necessary and we should learn them all 
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd6c3e4f">
+<h2 id="orgd6c3e4f">Structured Text Course</h2>
+<p>
+6 weeks of speaking english to a PLC 
+</p>
+
+</section>
+<section id="slide-orgd250be8">
+<h3 id="orgd250be8">Why Structured Text?</h3>
+<ul class="fragment appear">
+<li>There arent many people teaching or doing it</li>
+<li>Isnt that why we shouldnt learn it?</li>
+<li>Recent Thread on LinkedIn "its not troubleshooting friendly"</li>
+<li>"its too complicated for plant technicians or Electricians"</li>
+
+</ul>
+<aside class="notes">
+<p>
+ST in AB does not show live values, and many instructions are not available for use in ST. 
+We will discuss why in this course.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org9afdcee">
+<h3 id="org9afdcee">apparently this is easier</h3>
+<p>
+-<img src="ST_Course_Over.org_imgs/20190323_185301_gpIebH.png" alt="20190323_185301_gpIebH.png" /> 
+</p>
+
+
+</section>
+<section id="slide-org271d4a8">
+<h3 id="org271d4a8">I dont buy it.</h3>
+<ol>
+<li>All of you are capable of reading.</li>
+<li class="fragment appear">Its easier than ladder</li>
+<li class="fragment appear">Yes it is</li>
+<li class="fragment appear">Dont believe me?</li>
+
+</ol>
+
+
+</section>
+<section id="slide-orgf22a37f">
+<h3 id="orgf22a37f">Tell Me in Words how this ladder rung works</h3>
+<ul>
+<li><img src="ST_Course_Over.org_imgs/20190323_174940_7xz4na.png" alt="20190323_174940_7xz4na.png" /></li>
+
+</ul>
+<ul class="fragment appear">
+<li>If Start Button is pressed or the Motor is Running and the Motor temp is OK and the Stop button is NOT pushed pump motor command is on</li>
+<li>otherwise pump motor command is off</li>
+
+</ul>
+
+</section>
+<section id="slide-org03738ab">
+<h3 id="org03738ab">Now how about in ST</h3>
+<p>
+<img src="ST_Course_Over.org_imgs/20190323_183706_nD4VwQ.png" alt="20190323_183706_nD4VwQ.png" /> 
+-Holy Cow. Its.. Just.. Like&#x2026;. Hmm
+</p>
+
+</section>
+<section id="slide-orgbb15615">
+<h3 id="orgbb15615">Few More words about ST</h3>
+<p>
+-<a href="https://www.hackertyper.com">Hackers dont draw boxes</a>
+-IEC 61131-3 was written with a focused around using multiple languages for comprehensive control with ST being the workhorse 
+-ST allows us to focus on "progamming", and broad concepts while ladder logic is a larger set of instructions to navigate
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcea334b">
+<h2 id="orgcea334b">SOOOOO whats the plan?</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-org2bdc473">
+<h2 id="org2bdc473">Wing it- YEAH</h2>
+<div class="outline-text-2" id="text-org2bdc473">
+</div>
+</section>
+<section id="slide-org535ca95">
+<h3 id="org535ca95">Course Agenda</h3>
+<ul>
+<li class="fragment roll-in">This is pretty flexible and can <b>change</b> if we need to spend more time on something.</li>
+<li class="fragment roll-in">Class 1- Intro and Overview</li>
+<li class="fragment roll-in">Think Like a Programmer</li>
+<li class="fragment roll-in">PLC History</li>
+<li class="fragment roll-in">basic ST intro and Bedrock basic overview, simple demo.
+<ul>
+<li>This is just to give you a good idea of what we are getting into, and give you the tools to play around with it.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-orgc5beadb">
+<h3 id="orgc5beadb">Going Forward</h3>
+<p>
+Next Steps:
+</p>
+<ul>
+<li>Deeper look at program construction</li>
+<li>Variables, Data Types, Tags</li>
+<li>Variable Scoping</li>
+<li>The Mighty boolean and truth table logic</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<p> Created by Scooter. </p>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

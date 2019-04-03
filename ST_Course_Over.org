@@ -1,3 +1,4 @@
+#+reveal_root: http://cdn.jsdelivr.net/reveal.js/3.0.0 
 
 #+STARTUP: showeverything
 # Slide Tags 
