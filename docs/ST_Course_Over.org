@@ -1,0 +1,140 @@
+
+#+STARTUP: showeverything
+# Slide Tags 
+ #+title:  Synergy Structured Text Program Overview
+ #+author: Sean Terrell
+ #+email: AutomationSynergyND@gmail.com
+ #+REVEAL_HLEVEL: 1
+ #+reveal_root: https://cdn.jsdelivr.net/reveal.js/3.0.0 
+
+* Welcome to Automation Synergy
+Automation Nerds Welcome 
+
+* Sean "Scooter" Terrell 
+*THE* Nerd 
+#+ATTR_REVEAL: :frag (fade-in) 
+- SCADA Tech @ TIGA - Bakken Commissioning and Programming for 1.5 years
+- 14/14 rotation - Seeking partners that can hold classes when I am home
+- Non-traditional path to automation and programming
+- Navy Subs > Government > Manfacturing Equ OEM > Drilling > O&G Production
+- Didnt Learn PLC or "automation" until Step 7 in 2014.
+#+BEGIN_NOTES
+Programming is programming, Controls is controls. Learn the concepts The system irrelevent
+#+END_NOTES
+
+* Synergy
+n.	The interaction of two or more agents or forces so that their combined effect is greater than the sum of their individual effects.
+n.	Cooperative interaction among groups, especially among the acquired subsidiaries or merged parts of a corporation, that creates an enhanced combined effect
+
+** What is Synergy NoDak? 
+#+ATTR_REVEAL: :frag appear 
+- A community of automation professionals that meet to share knowledge
+- An opportuniny for nerds to do projects with interesting harware and software
+- Mostly Its Scooter rambling about some SCADA or IIoT junk
+- Free PLC and Automation programming classes. 
+- Networking and Company / Client independant information sharing
+- Its a platform providing a voice from the deckplate
+
+ 
+** Automation Synergy has the opportunity to affect the entire automation industry
+
+** I dont need free classes
+Awesome, we can use your knowledge!!
+#+ATTR_REVEAL: :frag appear
+- Plans for Vendor demos  
+- Plans for sponsored events  
+- Plans for live online programming lessons 
+- Potential partners for online forums / video hosting
+- Looking for Guest Lectures
+- Looking for Video Editing Assistance 
+- Seeking additional opportunities to partner with businesses and vendors
+
+* *Automation* Programming 
+Notice I did not say PLC Programming? 
+#+BEGIN_NOTES
+All aspects of automation are necessary and we should learn them all 
+#+END_NOTES
+
+* Structured Text Course 
+6 weeks of speaking english to a PLC 
+
+** Why Structured Text? 
+#+ATTR_REVEAL: :frag appear
+- There arent many people teaching or doing it
+- Isnt that why we shouldnt learn it? 
+- Recent Thread on LinkedIn "its not troubleshooting friendly"
+- "its too complicated for plant technicians or Electricians"
+#+BEGIN_NOTES
+ST in AB does not show live values, and many instructions are not available for use in ST. 
+We will discuss why in this course.
+#+END_NOTES 
+
+** apparently this is easier 
+-[[file:ST_Course_Over.org_imgs/20190323_185301_gpIebH.png]] 
+
+
+** I dont buy it.  
+#+ATTR_REVEAL: :frag (none appear appear appear)
+1. All of you are capable of reading.
+2. Its easier than ladder 
+3. Yes it is
+4. Dont believe me?
+
+
+** Tell Me in Words how this ladder rung works 
+
++ [[file:ST_Course_Over.org_imgs/20190323_174940_7xz4na.png]]
+#+ATTR_REVEAL: :frag appear
+- If Start Button is pressed or the Motor is Running and the Motor temp is OK and the Stop button is NOT pushed pump motor command is on 
+- otherwise pump motor command is off
+
+** Now how about in ST
+
+[[file:ST_Course_Over.org_imgs/20190323_183706_nD4VwQ.png]] 
+-Holy Cow. Its.. Just.. Like.... Hmm
+
+** Few More words about ST
+-[[https://www.hackertyper.com][Hackers dont draw boxes]]
+-IEC 61131-3 was written with a focused around using multiple languages for comprehensive control with ST being the workhorse 
+-ST allows us to focus on "progamming", and broad concepts while ladder logic is a larger set of instructions to navigate
+
+* SOOOOO whats the plan?
+
+* Wing it- YEAH
+
+
+** Course Agenda
+#+ATTR_REVEAL: :frag (roll-in)
+- This is pretty flexible and can *change* if we need to spend more time on something.
+- Class 1- Intro and Overview 
+- Think Like a Programmer 
+- PLC History 
+- basic ST intro and Bedrock basic overview, simple demo.
+  * This is just to give you a good idea of what we are getting into, and give you the tools to play around with it.
+
+** Going Forward
+Next Steps:
+- Deeper look at program construction
+- Variables, Data Types, Tags
+- Variable Scoping
+- The Mighty boolean and truth table logic
+
+
+# reveal tags 
+# reveal_root: /Users/twinflame_automation/Documents/G/GitHub/reveal.js
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_width:1200 reveal_height:800 
+#+OPTIONS: toc:nil 
+# OPTIONS: org-reveal-title-slide: %t %a %e %d
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: league 
+#+REVEAL_POSTAMBLE: <p> Created by Scooter. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+# REVEAL_EXTRA_CSS: ./local.css
+
+ 
+ 
