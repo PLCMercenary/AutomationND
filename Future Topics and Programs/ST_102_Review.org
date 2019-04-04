@@ -1,0 +1,76 @@
+#+STARTUP: showeverything
+# Slide Tags 
+ #+title: ST 100 Review
+ #+REVEAL_HLEVEL: 1
+ #+reveal_root: https://cdn.jsdelivr.net/reveal.js/3.0.0 
+
+* Review from last week
+** All of you know this... maybe.. so 
+#+ATTR_Reveal: :frag roll-in
+1) What is Structured Text ? 
+#+ATTR_Reveal: :frag roll-in
+   ST is a PLC programming language specified by IEC 61131-3
+#+REVEAL: split
+#+ATTR_Reveal: :frag highlight-red 
+   How the hell should we know dude you just kept yelling it was better
+#+REVEAL: split
+#+ATTR_Reveal: :frag roll-in
+2) What is IEC 61131-3 
+#+REVEAL: split
+#+ATTR_Reveal: :frag highlight_green
+   IDK did they raise my taxes?
+#+ATTR_Reveal: :frag fade-in
+   international standard for industrial control sustems programming
+#+REVEAL: split
+#+ATTR_Reveal: :frag roll-in
+3) Do Hackers use ladder? 
+#+ATTR_Reveal: :frag appear
+   If you dont know this... watch mr robot.
+
+
+* What does it take to be a programmer?
+
+** [[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/110117_istock_coder.large.jpg]] 
+#+BEGIN_QUOTE
+Practice this look... You will be wearing it often
+#+END_QUOTE
+#+REVEAL: split
+*** [[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/2131742_1.jpg]]   
+#+REVEAL: split
+
+** Someday... You will need some: 
+#+ATTR_reveal: :frag fade-in 
+[[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/Classic-Matrix-Neo-Glasses-Rimless-Fashion-Movie-Same-Paragraph-Oval-Anti-UV-Black-Metal-Collect-Handsome.jpg]]
+-Sunglasses.. and a cool nickname
+#+REVEAL: split
+#+ATTR_reveal: :frag fade-in 
+[[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/Guy_Fawkes_Mask.jpg]]
+- Cuz anons 
+
+** Really though its mostly like this 
+*** [[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/my-code-doesntwork-i-have-no-idea-why-my-code-14032929.png]] 
+
+
+* Questions? 
+- [[/Users/twinflame_automation/Library/Mobile Documents/com~apple~CloudDocs/Meme/2e058045582fc2e75ea29721c28cdbf2.jpg]]
+
+
+
+
+  
+# Reveal tags 
+# reveal_root: /Users/twinflame_automation/Documents/G/GitHub/reveal.js
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_width:1200 reveal_height:800 
+#+OPTIONS: toc:nil 
+# OPTIONS: org-reveal-title-slide: %t %a %e %d
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: solarized 
+#+REVEAL_POSTAMBLE: <p> Created by Scooter. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+# REVEAL_EXTRA_CSS: ./local.css
+
