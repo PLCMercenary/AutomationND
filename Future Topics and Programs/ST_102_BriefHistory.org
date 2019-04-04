@@ -9,7 +9,7 @@
 * Why does every PLC class have this section? 
 ** Its actually kind of important
 The same goes for computer programming. 
-#+ATTR_reveal :frag (roll-in)
+#+ATTR_reveal: :frag (roll-in)
 -Without a decent understanding of the development of PLCs and controls
 -Some of it seems pretty senseless
 
@@ -29,12 +29,12 @@ The same goes for computer programming.
 [[file:ST_102_BriefHistory.org_imgs/20190403_164550_uWXdlO.png]]
 
 ** the requirements for the system were 
-#+ATTR_reveal :frag appear
+#+ATTR_reveal: :frag appear
  - A solid-state system that was flexible like a computer but priced competitively with a like kind relay logic system.
  - Easily maintained, and programmed in line with the already accepted relay ladder logic way of doing things.
  - It had to work in an industrial environment with all its dirt, moisture, electromagnetism and vibration.
  - It had to be modular in form to allow for easy exchange of components and expandability.
-#+ATTR_reveal :frag fade-in 
+#+ATTR_reveal: :frag fade-in 
 *Magically poof, the Modicon 184 and Ladder logic 
 
 * Yall think thats how Im going to do this?
@@ -65,20 +65,20 @@ The same goes for computer programming.
  I said quick didnt I?
 
 ** Things to take away
-#+ATTR_reveal :frag fade-in 
+#+ATTR_reveal: :frag fade-in 
 1) People have been automating the world aroung them since the beginnning of time. 
-#+ATTR_reveal :frag fade-in 
+#+ATTR_reveal: :frag fade-in 
    We just do better, faster, slicker, and more like Mr Robot
 #+REVEAL: split
 2) Ladder Logic was not and has never been used because its easier to troubleshoot or for maintenance techs
-#+ATTR_reveal :frag fade-in 
+#+ATTR_reveal: :frag fade-in 
    a) Ladder logic was made a thing by GE for 2 reasons
-#+ATTR_reveal :frag (appear)
+#+ATTR_reveal: :frag (appear)
    1. PAPER. they were already printing all of the engineering drawings and has a developed program for documentation
    2. Commissioning and Site Acceptance. The whole reason for the development was to cut development and commissioning costs
-#+ATTR_reveal :frag roll-in 
+#+ATTR_reveal: :frag roll-in 
        changing the way the engineering team was specifying the build packages and printing the documentation would have added costs
-#+ATTR_reveal :frag roll-in 
+#+ATTR_reveal: :frag roll-in 
 3) Ladder, Like all programming languages is meant for 1 thing. Humans to read it. the PLC could care less
 
 
@@ -97,7 +97,7 @@ The same goes for computer programming.
 #+REVEAL_MIN_SCALE: 0.5
 #+REVEAL_MAX_SCALE: 2.5
 #+REVEAL_TRANS: convex 
-#+REVEAL_THEME:  
+#+REVEAL_THEME: black 
 #+REVEAL_POSTAMBLE: <p> Created by Scooter. </p>
 #+REVEAL_PLUGINS: (markdown notes)
 # REVEAL_EXTRA_CSS: ./local.css

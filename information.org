@@ -10,17 +10,38 @@
 |       | re-record            |         |      |       |
 | 3 May | History, Control     |         |      |       |
 |       | theory, more complex |         |      |       |
+|-------+----------------------+---------+------+-------|
+|       |                      |         |      |       |
+|       |                      |         |      |       |
+|       |                      |         |      |       |
+|       |                      |         |      |       |
 |       |                      |         |      |       |
 
-* This file will be a catch all for anything that i thunk would be benificial 
+* This file will be a catch all for anything that i thunk would be benificial
+Links, Videos, Downloads, Books Its all going here.. 
+
+*  Link to the most recent online session recording
 
 
-*  Link to the online session recording
-- Well... So I Messed up and let it get deleted, session sundy, 
+
 
 * Udemy.com classes
 [[color:green][Vladimir Romanov]] 
 Paul Lynn
-Fred PC
+
+
+* Websites Support (non vendor) 
+IF you are on this GIT page and would like your website listed pull request and add it Please
+[[www.PLCGurus.com]]
+[[https://www.reddit.com/r/PLC/]]
+[[https://www.mrPLC.com]]
+[[www.plctalk.net]]
+
+ 
+** Websites Training Free Material
+[[https://www.SolisPLC.com]]
+[[https://www.PLCGurus.net]]
+[[https://www.plcacademy.com]]
+
 
 

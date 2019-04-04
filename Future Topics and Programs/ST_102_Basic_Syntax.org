@@ -1,0 +1,44 @@
+#+STARTUP: showeverything
+# Slide Tags 
+ #+title: ST Basic Syntax 
+ #+REVEAL_HLEVEL: 1
+ #+reveal_root: https://cdn.jsdelivr.net/reveal.js/3.0.0 
+
+ 
+* Structured Text basic syntax
+
+** What is it?
+Structured Text is PLC programming language defined by PLCOpen in IEC 61131-3. The programming language is text-based, compared to the graphics-based ladder diagram or Function Block Diagram.
+
+** PROGRAM / END_PROGRAM
+Everything in between is your PLC program. 
+[[/Users/twinflame_automation/Dropbox/orgfiles/img/structured-text-program-flow.jpg]]
+
+** All statements are divided by semicolons
+- Structured Text consists of statements and semicolons to separate them.
+  -The language is not case-sensitive
+- Even though it is good practice to use upper- and lowercase for readability, it’s not necessary.
+  -Spaces have no function
+- But they should be used for readability.
+
+
+
+
+
+
+
+# Reveal tags 
+# reveal_root: /Users/twinflame_automation/Documents/G/GitHub/reveal.js
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_width:1200 reveal_height:800 
+#+OPTIONS: toc:nil 
+# OPTIONS: org-reveal-title-slide: %t %a %e %d
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: slide
+#+REVEAL_THEME: sky 
+#+REVEAL_POSTAMBLE: <p> Created by Scooter. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+# REVEAL_EXTRA_CSS: ./local.css

@@ -26,6 +26,8 @@ these are what we will call "Classes" later on and the intention is for you to m
 and hold no memory once called it returns and then its gone
 
 * Table of POUinness 
+
+|----------+----------------+-------------------------------------------|
 | POU Type | Keyword        | Meaning                                   |
 |----------+----------------+-------------------------------------------|
 | Program  | PROGRAM        | Main program including assignment to I/O, |
@@ -36,8 +38,7 @@ and hold no memory once called it returns and then its gone
 |----------+----------------+-------------------------------------------|
 | Function | FUNCTION       | Block with function value for extension   |
 |          |                | of the basic PLC operation set            |
-|          |                |                                           |
-
+|----------+----------------+-------------------------------------------|
 
 
 * Elements of a POU 
@@ -47,9 +48,9 @@ and hold no memory once called it returns and then its gone
 
 * Declaration of Variables
 Whats a variable again?
-#+ATTR_reveal :frag appear
+#+ATTR_reveal: :frag appear
 [[file:ST_102_BuildingBlocks.org_imgs/20190403_183013_SdrDKn.png]]
-#+ATTR_reveal :frag appear
+#+ATTR_reveal: :frag appear
 Its just a place in memory that specifies some data
 
 
@@ -75,9 +76,8 @@ END_VAR
 
 #+END_SRC
 
-
 #+REVEAL: split 
-he variable declaration part of a POU. A signed integer variable (16 bits incl. sign) with name MotorNr and a text of length 10 with name MotorName are declared. The binary variable EmStop (emergency stop) is assigned to the I/O signal input 2.0 (using the keyword “AT”). These three variables are known only within the corresponding POU, i.e. they are “local”. They can only be read and altered by this POU. During a power failure they retain their value, as is indicated by the qualifier “RETAIN”. The value for input variable ValidFlag will be set by the calling POU and have the Boolean values TRUE or FALSE. The output parameter returned by the POU in this example is the floating- point value RevPM.
+The variable declaration part of a POU. A signed integer variable (16 bits incl. sign) with name MotorNr and a text of length 10 with name MotorName are declared. The binary variable EmStop (emergency stop) is assigned to the I/O signal input 2.0 (using the keyword “AT”). These three variables are known only within the corresponding POU, i.e. they are “local”. They can only be read and altered by this POU. During a power failure they retain their value, as is indicated by the qualifier “RETAIN”. The value for input variable ValidFlag will be set by the calling POU and have the Boolean values TRUE or FALSE. The output parameter returned by the POU in this example is the floating- point value RevPM.
 The Boolean values TRUE and FALSE can be also be indicated by “1” and “0”.
 
 
