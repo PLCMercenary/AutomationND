@@ -21,6 +21,8 @@ Everything in between is your PLC program.
   -Spaces have no function
 - But they should be used for readability.
 
+[[file:~/Dropbox/orgfiles/img/assignment-statement-expression-evaluation.gif]]
+
 
 
 
