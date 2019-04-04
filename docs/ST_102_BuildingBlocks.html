@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Building Block of 61131-3</title>
+<meta name="author" content="(TwinFlame Automation)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/sky.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Building Block of 61131-3</h1><h2 class="author">TwinFlame Automation</h2><p class="date">Created: 2019-04-03 Wed 19:39</p>
+</section>
+
+<section>
+<section id="slide-org7f2fc29">
+<h2 id="org7f2fc29">Like Legos</h2>
+
+<div class="figure">
+<p><img src="ST_102_BuildingBlocks.org_imgs/20190403_180444_wJBdKm.png" alt="20190403_180444_wJBdKm.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-org1e141ed">
+<h3 id="org1e141ed">IEC 61131-3 actively moved away from German standards</h3>
+<ul>
+<li>DIN 192339 was the older Step 7 style with OB, PB, SB, DB</li>
+<li>Now we have POU's</li>
+
+</ul>
+
+<div class="figure">
+<p><img src="ST_102_BuildingBlocks.org_imgs/20190403_181300_RwPeXU.png" alt="20190403_181300_RwPeXU.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgda1cce5">
+<h3 id="orgda1cce5">POU's come in 3 flavors</h3>
+<ul>
+<li>Program</li>
+<li>Function Block</li>
+<li>Funtion</li>
+
+</ul>
+
+</section>
+<section id="slide-org0edbc08">
+<h3 id="org0edbc08">Program is a routine that calls functions and FB</h3>
+
+</section>
+<section id="slide-orge2e3c6b">
+<h3 id="orge2e3c6b">Function Blocks are routines that perform some task and have memory</h3>
+<p>
+these are what we will call "Classes" later on and the intention is for you to make a bunch of them
+</p>
+
+</section>
+<section id="slide-org80aee69">
+<h3 id="org80aee69">Functions are often NOT instantiated, but can be called for a return</h3>
+<p>
+and hold no memory once called it returns and then its gone
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org8c4f479">
+<h2 id="org8c4f479">Table of POUinness</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">POU Type</th>
+<th scope="col" class="org-left">Keyword</th>
+<th scope="col" class="org-left">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Program</td>
+<td class="org-left">PROGRAM</td>
+<td class="org-left">Main program including assignment to I/O,</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">global variables and access paths</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Function</td>
+<td class="org-left">FUNCTION<sub>BLOCK</sub></td>
+<td class="org-left">Block with input and output variables;</td>
+</tr>
+
+<tr>
+<td class="org-left">block</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">this is the most frequently used POU type</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Function</td>
+<td class="org-left">FUNCTION</td>
+<td class="org-left">Block with function value for extension</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">of the basic PLC operation set</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-org01b5440">
+<h2 id="org01b5440">Elements of a POU</h2>
+
+<div class="figure">
+<p><img src="ST_102_BuildingBlocks.org_imgs/20190403_182218_sh0va5.png" alt="20190403_182218_sh0va5.png" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Elements of a POU (left) and example of a function block in IL (right). The FB contains the input parameter VarIn as well as the two return values VarOut1 and VarOut2. VarLocal is a local variable.</p>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orge55a6e2">
+<h2 id="orge55a6e2">Declaration of Variables</h2>
+<p>
+Whats a variable again?
+#+ATTR<sub>reveal</sub> :frag appear
+<img src="ST_102_BuildingBlocks.org_imgs/20190403_183013_SdrDKn.png" alt="20190403_183013_SdrDKn.png" />
+#+ATTR<sub>reveal</sub> :frag appear
+Its just a place in memory that specifies some data
+</p>
+
+
+</section>
+<section id="slide-org634146c">
+<h3 id="org634146c">Specifications for Variables</h3>
+<ul>
+<li>The IEC61131-3 standard uses variables to store and process information. Variables correspond to (global) flags or bit memories in conventional PLC systems.</li>
+<li>Storage locations no longer need to be defined manually by the user (as absolute or global addresses)</li>
+<li>managed automatically and possess a fixed data type</li>
+
+</ul>
+
+</section>
+<section id="slide-org2f036dc">
+<h3 id="org2f036dc">Variables example</h3>
+<pre  class="example">
+VAR_INPUT                 (* Input variable *)
+  ValidFlag : BOOL;        (* Binary value *)
+END_VAR
+VAR_OUTPUT                (* Output variable *)
+   RevPM   : REAL;        (* Floating-point value *)
+END_VAR 
+VAR RETAIN
+  MotorNr  : INT;         (* Local variable, battery-backed *) (* Signed integer *)
+  MotorName  : STRING [10];   (* String of length 10 *)
+  EmStop AT %IX2.0 : BOOL;    (* Input bit 2.0 of I/O *)
+END_VAR
+
+</pre>
+
+
+</section>
+<section >
+<p>
+he variable declaration part of a POU. A signed integer variable (16 bits incl. sign) with name MotorNr and a text of length 10 with name MotorName are declared. The binary variable EmStop (emergency stop) is assigned to the I/O signal input 2.0 (using the keyword “AT”). These three variables are known only within the corresponding POU, i.e. they are “local”. They can only be read and altered by this POU. During a power failure they retain their value, as is indicated by the qualifier “RETAIN”. The value for input variable ValidFlag will be set by the calling POU and have the Boolean values TRUE or FALSE. The output parameter returned by the POU in this example is the floating- point value RevPM.
+The Boolean values TRUE and FALSE can be also be indicated by “1” and “0”.
+</p>
+</section>
+</section>
+</div>
+</div>
+<p> Created by Scooter. </p>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

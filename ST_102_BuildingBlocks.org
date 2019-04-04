@@ -1,0 +1,104 @@
+#+STARTUP: showeverything
+# Slide Tags 
+ #+title: Building Block of 61131-3
+ #+REVEAL_HLEVEL: 1
+ #+reveal_root: https://cdn.jsdelivr.net/reveal.js/3.0.0 
+
+* Like Legos 
+[[file:ST_102_BuildingBlocks.org_imgs/20190403_180444_wJBdKm.png]]
+
+** IEC 61131-3 actively moved away from German standards
+- DIN 192339 was the older Step 7 style with OB, PB, SB, DB
+- Now we have POU's
+[[file:ST_102_BuildingBlocks.org_imgs/20190403_181300_RwPeXU.png]]
+
+** POU's come in 3 flavors 
+- Program 
+- Function Block 
+- Funtion
+
+** Program is a routine that calls functions and FB
+
+** Function Blocks are routines that perform some task and have memory 
+these are what we will call "Classes" later on and the intention is for you to make a bunch of them
+
+** Functions are often NOT instantiated, but can be called for a return 
+and hold no memory once called it returns and then its gone
+
+* Table of POUinness 
+| POU Type | Keyword        | Meaning                                   |
+|----------+----------------+-------------------------------------------|
+| Program  | PROGRAM        | Main program including assignment to I/O, |
+|          |                | global variables and access paths         |
+|----------+----------------+-------------------------------------------|
+| Function | FUNCTION_BLOCK | Block with input and output variables;    |
+| block    |                | this is the most frequently used POU type |
+|----------+----------------+-------------------------------------------|
+| Function | FUNCTION       | Block with function value for extension   |
+|          |                | of the basic PLC operation set            |
+|          |                |                                           |
+
+
+
+* Elements of a POU 
+#+Caption: Elements of a POU (left) and example of a function block in IL (right). The FB contains the input parameter VarIn as well as the two return values VarOut1 and VarOut2. VarLocal is a local variable.
+[[file:ST_102_BuildingBlocks.org_imgs/20190403_182218_sh0va5.png]]
+
+
+* Declaration of Variables
+Whats a variable again?
+#+ATTR_reveal :frag appear
+[[file:ST_102_BuildingBlocks.org_imgs/20190403_183013_SdrDKn.png]]
+#+ATTR_reveal :frag appear
+Its just a place in memory that specifies some data
+
+
+** Specifications for Variables
+- The IEC61131-3 standard uses variables to store and process information. Variables correspond to (global) flags or bit memories in conventional PLC systems.
+- Storage locations no longer need to be defined manually by the user (as absolute or global addresses)
+- managed automatically and possess a fixed data type
+ 
+** Variables example
+
+#+Begin_Src 
+VAR_INPUT                 (* Input variable *)
+  ValidFlag : BOOL;        (* Binary value *)
+END_VAR
+VAR_OUTPUT                (* Output variable *)
+   RevPM   : REAL;        (* Floating-point value *)
+END_VAR 
+VAR RETAIN
+  MotorNr  : INT;         (* Local variable, battery-backed *) (* Signed integer *)
+  MotorName  : STRING [10];   (* String of length 10 *)
+  EmStop AT %IX2.0 : BOOL;    (* Input bit 2.0 of I/O *)
+END_VAR
+
+#+END_SRC
+
+
+#+REVEAL: split 
+he variable declaration part of a POU. A signed integer variable (16 bits incl. sign) with name MotorNr and a text of length 10 with name MotorName are declared. The binary variable EmStop (emergency stop) is assigned to the I/O signal input 2.0 (using the keyword “AT”). These three variables are known only within the corresponding POU, i.e. they are “local”. They can only be read and altered by this POU. During a power failure they retain their value, as is indicated by the qualifier “RETAIN”. The value for input variable ValidFlag will be set by the calling POU and have the Boolean values TRUE or FALSE. The output parameter returned by the POU in this example is the floating- point value RevPM.
+The Boolean values TRUE and FALSE can be also be indicated by “1” and “0”.
+
+
+
+
+
+
+# Reveal tags 
+# reveal_root: /Users/twinflame_automation/Documents/G/GitHub/reveal.js
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_width:1200 reveal_height:800 
+#+OPTIONS: toc:nil 
+# OPTIONS: org-reveal-title-slide: %t %a %e %d
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: slide
+#+REVEAL_THEME: sky 
+#+REVEAL_POSTAMBLE: <p> Created by Scooter. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+# REVEAL_EXTRA_CSS: ./local.css
+
+ 

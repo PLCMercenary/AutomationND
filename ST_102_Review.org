@@ -29,35 +29,32 @@
 
 
 * What does it take to be a programmer?
-
-** [[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/110117_istock_coder.large.jpg]] 
+You mean besides just saying stuff noone knows if you are being truthful or making that up.
 #+BEGIN_QUOTE
-Practice this look... You will be wearing it often
+- Polypaser isnt a real thing... is it... yes.. I know what those are.... not real. 
+#+END_QUOTE 
+
+** [[/Users/twinflame_automation/Library/Mobile Documents/com~apple~CloudDocs/Meme/110117_istock_coder.large.jpg]] 
+#+BEGIN_VERSE
+This look.. Work on perfecting it.. You'll be doing it alot 
+#+END_VERSE  
+
+** What my mom say I do vs What I actually do  
+[[yt:HluANRwPyNo][Expectation vs Reality]]
+
+** Because Anons 
+[[/Users/twinflame_automation/Dropbox/orgfiles/synergy/Future Topics and Programs/ST_102_Review.org_imgs/20190404_020531_8PsLKU.png]]
+
+#+BEGIN_QUOTE
+You dont know why, but around Nov 4th you start feeling the Vivatios, vindication, of the veritable, victory, for vanqushing villans --- SHUT UP
 #+END_QUOTE
-#+REVEAL: split
-*** [[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/2131742_1.jpg]]   
-#+REVEAL: split
 
-** Someday... You will need some: 
-#+ATTR_reveal: :frag fade-in 
-[[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/Classic-Matrix-Neo-Glasses-Rimless-Fashion-Movie-Same-Paragraph-Oval-Anti-UV-Black-Metal-Collect-Handsome.jpg]]
--Sunglasses.. and a cool nickname
-#+REVEAL: split
-#+ATTR_reveal: :frag fade-in 
-[[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/Guy_Fawkes_Mask.jpg]]
-- Cuz anons 
+* Seriously though.. Its pretty awesome always a challenge and never boring 
+OK its Boring sometimes
 
-** Really though its mostly like this 
-*** [[/Users/twinflame_automation/Library/Mobile%20Documents/com~apple~CloudDocs/Meme/my-code-doesntwork-i-have-no-idea-why-my-code-14032929.png]] 
+* Questions?
 
 
-* Questions? 
-- [[/Users/twinflame_automation/Library/Mobile Documents/com~apple~CloudDocs/Meme/2e058045582fc2e75ea29721c28cdbf2.jpg]]
-
-
-
-
-  
 # Reveal tags 
 # reveal_root: /Users/twinflame_automation/Documents/G/GitHub/reveal.js
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
@@ -68,8 +65,10 @@ Practice this look... You will be wearing it often
 #+REVEAL_MARGIN: 0.1
 #+REVEAL_MIN_SCALE: 0.5
 #+REVEAL_MAX_SCALE: 2.5
+# Transitions: None | Fade | Slide | Convex | Concave | Zoom
 #+REVEAL_TRANS: cube
-#+REVEAL_THEME: solarized 
+# themes None | Black | White | League | Sky | Beige | Simple | Serif | Blood | Night | Moon | Solarized |
+#+REVEAL_THEME: moon  
 #+REVEAL_POSTAMBLE: <p> Created by Scooter. </p>
 #+REVEAL_PLUGINS: (markdown notes)
 # REVEAL_EXTRA_CSS: ./local.css
