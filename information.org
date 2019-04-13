@@ -2,25 +2,41 @@
   
 
 
-* Next Meetings
-
-| date  | Topics               | Locaton | Note |  Time |
-|-------+----------------------+---------+------+-------|
-| 1 Apr | Review and           |   31200 |      | 19:00 |
-|       | re-record            |         |      |       |
-| 3 May | History, Control     |         |      |       |
-|       | theory, more complex |         |      |       |
-|-------+----------------------+---------+------+-------|
-|       |                      |         |      |       |
-|       |                      |         |      |       |
-|       |                      |         |      |       |
-|       |                      |         |      |       |
-|       |                      |         |      |       |
-
 * This file will be a catch all for anything that i thunk would be benificial
 Links, Videos, Downloads, Books Its all going here.. 
 
-*  Link to the most recent online session recording
+
+
+
+* Next Meetings
+
+| date   | Topics                | Locaton | Note     |  Time |
+|--------+-----------------------+---------+----------+-------|
+| 1 Apr  | Review and            | 31200   |          | 19:00 |
+|        | re-record             |         |          |       |
+| 3 May  | History, Control      |         |          |       |
+|        | theory, more complex  |         |          |       |
+|--------+-----------------------+---------+----------+-------|
+| 11 Apr | ST102 Just discussing | online  | video on |       |
+|        | Syntax                |         | YT       |       |
+| 13 Apr | Small Group Session   | Zoom    |          |       |
+|        | Videos                |         |          |       |
+|--------+-----------------------+---------+----------+-------|
+| 14 Apr | Samll Group Session   | 3PM     |          | 15:00 |
+|        | Videos                | Zoom    |          |       |
+|        |                       |         |          |       |
+|        |                       |         |          |       |
+|        |                       |         |          |       |
+|        |                       |         |          |       |
+|        |                       |         |          |       |
+|        |                       |         |          |       |
+
+
+
+
+
+
+* TODO YT links 
 
 
 
@@ -32,11 +48,22 @@ Paul Lynn
 
 * Websites Support (non vendor) 
 IF you are on this GIT page and would like your website listed pull request and add it Please
-[[www.PLCGurus.com]]
+
+[[https://www.PLCgurus.net]]
+
+
+
+
+[
+
+
+
+
+
+
 [[https://www.reddit.com/r/PLC/]]
 [[https://www.mrPLC.com]]
 [[www.plctalk.net]]
-
  
 ** Websites Training Free Material
 [[https://www.SolisPLC.com]]
@@ -44,4 +71,4 @@ IF you are on this GIT page and would like your website listed pull request and 
 [[https://www.plcacademy.com]]
 
 
-
+ 

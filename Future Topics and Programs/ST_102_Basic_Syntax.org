@@ -21,7 +21,21 @@ Everything in between is your PLC program.
   -Spaces have no function
 - But they should be used for readability.
 
-[[file:~/Dropbox/orgfiles/img/assignment-statement-expression-evaluation.gif]]
+*** Semi to Semi
+- var1 : type ;
+  var2 : custom ;
+
+*** KEYWORD to END MARK or END MARK TO KEY WORD                      
+
+
+
+
+** 
+
+
+
+
+ 
 
 
 
@@ -29,7 +43,141 @@ Everything in between is your PLC program.
 
 
 
-# Reveal tags 
+
+
+
+
+
+
+
+
+
+
+
+**  VAR
+
+ 
+~INT~
+~DINT~
+=UDIT=
+=SINT=
+
+=TIME   T#5m=
+ =      T#2s=
+=VAR
+  bVar1 : BOOL;
+END_VAR=
+
+==INT := ANY WHOLE NUMBER  6.0= 
+==REAL or FLOAT := 0.0=
+
+
+
+* Arrays are a sequence of the same type of data.  
+
+**  Like an Ikea SHelf 
+#+BEGIN_src 
+VAR
+  arrBox: ARRAY [-5..50] of BOOL;
+  arrMotor : ARRAY [1..10] of INT; 
+  arrStart : ARRAY [1..10] of BOOL; 
+  arrTempSen : ARRAY [1..10] or REAL; 
+END_VAR
+
+#+End_SRC
+
+
+
+
+
+*  Exercise 1
+
+** Codesys Ctrl (Win V3) x64
+ST - Struct text
+
+
+
+#+BEGIN_Example
+
+start boolean 
+stop boolean
+
+temp sensor  real
+pump speed real 
+
+caseseq  int
+
+10 pump dints
+20 overloads in
+
+#+END_EXAMPLE
+
+
+
+
+** Fundamental Base of statments defined by ;
+; to ; = statement
+
+~: is the assignment   ~
+~:=   is value asignment ~
+
+IF level = 5 THEN  ~ = is asking ? ~
+
+                   
+** Rule 1 Vars 
+1)Name 
+2)type 
+3)Init Value
+
+** Rule 2 assignment 
+
+~ := assign value ~
+
+
+** Rule 3 comparison 
+
+~ = - performing a comparison
+ - asking the question 
+
+** RULE 4 ST statements are mostly from ; to ; 
+- keyword to ; 
+- ; to keyword
+
+*  STATEMENTS, INSTRUCTIONS AND EXPRESSIONS
+** Statement
+ - Declareitive truth about data
+  =ESTOP :== Local.3:I.Data.15 =
+ 
+ - Boolean in nature
+
+** Expressions
+([Operator 
+Operands.]
+
+Evaluated )
+
+
+IF bMotorOn AND PSI > 60 THEN
+   indLamp := TRUE;
+
+indLamp := bmotorON AND (PSI > 60) or  
+           (NOT ESD_ACTIVE AND TANK[3] < 3);
+
+
+IF this THAN 
+ that
+else turn that off 
+
+
+
+
+
+
+
+
+
+                                   
+ # Reveal tags 
 # reveal_root: /Users/twinflame_automation/Documents/G/GitHub/reveal.js
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
@@ -44,3 +192,14 @@ Everything in between is your PLC program.
 #+REVEAL_POSTAMBLE: <p> Created by Scooter. </p>
 #+REVEAL_PLUGINS: (markdown notes)
 # REVEAL_EXTRA_CSS: ./local.css
+
+
+
+
+
+
+
+
+
+
+
