@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Structured Text Data and Syntax</title>
+<meta name="author" content="Sean Terrell"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Structured Text Data and Syntax</h1><h2 class="author">Sean Terrell</h2><p class="date">Created: 2019-04-15 Mon 09:26</p>
+</section>
+<section id="table-of-contents-section">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org3f08412">1. Structured Text in PLC's</a>
+<ul>
+<li><a href="#/slide-orga02f485">1.1. 5 Rules for ST</a>
+<ul>
+<li><a href="#/slide-orgff7941c">1.1.1. 1 Variables</a></li>
+<li><a href="#/slide-org1fbd998">1.1.2. 2 SeimiColons devide all statements</a></li>
+<li><a href="#/slide-org8ff66b0">1.1.3. 3 Whitespace has no meaning</a></li>
+<li><a href="#/slide-org904e3e9">1.1.4. 4 Statements give instructions, using expressions</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgf6e4237">1.2. <span class="todo TODO">TODO</span> (FIXME)  Colon is the assignment Operator</a></li>
+<li><a href="#/slide-orgc8e3d30">1.3. Basic Functions:</a></li>
+<li><a href="#/slide-org181413b">1.4. Simple IF &gt; Expression</a></li>
+<li><a href="#/slide-org2392af7">1.5. Finite State Machine</a></li>
+<li><a href="#/slide-org78018c2">1.6. </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section>
+<section id="slide-org3f08412">
+<h2 id="org3f08412"><span class="section-number-2">1</span> Structured Text in PLC's</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orga02f485">
+<h3 id="orga02f485"><span class="section-number-3">1.1</span> 5 Rules for ST</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+</section>
+<section id="slide-orgff7941c">
+<h4 id="orgff7941c"><span class="section-number-4">1.1.1</span> 1 Variables</h4>
+<ul>
+<li>Vars are declared in the Declation Construct using some Key words</li>
+<li>Varibles must be delared BEFORE they can be used</li>
+
+</ul>
+
+<pre  class="example">
+VAR
+  bMyBool : BOOL; // Commenting a single line
+  bMyOtherBool : BOOL := TRUE  (* Multi Line
+                                 Comment Test*)
+  iMyDint: DINT;  /*Anther type multi line */  
+  fScanTime : REAL;                  
+END_VAR
+
+bMyBool := bMyOtherBool ; 
+</pre>
+
+<ul>
+<li><img src="./ST_102_Basic_Syntax.org_imgs/20190413_233647_lcoi2Q.png" alt="20190413_233647_lcoi2Q.png" /></li>
+
+<li><img src="file:///Users/twinflame_automation/Dropbox/orgfiles/img/animations/dec-code.gif" alt="dec-code.gif" /></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org1fbd998">
+<h4 id="org1fbd998"><span class="section-number-4">1.1.2</span> 2 SeimiColons devide all statements</h4>
+<ul>
+<li>semi colons is how you count state to state
+<ul>
+<li>ST is based on PASCAL, uses Logical Language</li>
+<li>statements move from ; to ; OR Key to ;</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org8ff66b0">
+<h4 id="org8ff66b0"><span class="section-number-4">1.1.3</span> 3 Whitespace has no meaning</h4>
+<ul>
+<li>SHould be used for clarity</li>
+
+</ul>
+
+<p>
+~  bMyBool := (bMyOtherBool AND iMyDint &gt; 3),
+              AND NOT fScanTime &lt; 12 ; ~            
+</p>
+
+</section>
+<section id="slide-org904e3e9">
+<h4 id="org904e3e9"><span class="section-number-4">1.1.4</span> 4 Statements give instructions, using expressions</h4>
+
+
+
+
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgf6e4237">
+<h3 id="orgf6e4237"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> (FIXME)  Colon is the assignment Operator</h3>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgc8e3d30">
+<h3 id="orgc8e3d30"><span class="section-number-3">1.3</span> Basic Functions:</h3>
+<p>
+TON 
+RTRIG
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org181413b">
+<h3 id="org181413b"><span class="section-number-3">1.4</span> Simple IF &gt; Expression</h3>
+<p>
+IF 
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org2392af7">
+<h3 id="org2392af7"><span class="section-number-3">1.5</span> Finite State Machine</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org78018c2">
+<h3 id="org78018c2"><span class="section-number-3">1.6</span> </h3>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
