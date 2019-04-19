@@ -1,0 +1,180 @@
+#+STARTUP: showeverything
+# Slide Tags 
+#+Title: Structured Text Data and Syntax
+ #+AUTHOR: Scooter
+#+EMAIL: autoationsynergyND@gmail.com
+#+REVEAL_HLEVEL: 2
+#+Reveal_root: https://cdn.jsdelivr.net/reveal.js/3.0.0 
+#+LANGUAGE: en
+#+KEYWORDS: org-mode
+
+
+
+*   Structured Text in PLC's 
+
+
+** 5 Rules for ST
+
+*** 1 Variables
+#+ATTR_Reveal: :frag roll_in
+
+  - Vars are declared in the Declation Construct using some Key words
+  - Varibles must be delared BEFORE they can be used
+ 
+#+REVEAL: split
+
+
+#+Begin_src      iec61131
+
+
+ VAR 
+    bMyBool : BOOL; // Commenting a single line
+    bMyOtherBool : BOOL := TRUE  (* Multi Line
+                                   Comment Test*)
+    iMyDint: DINT;  (*Anther type multi line *)
+ END_VAR
+  bMyBool := bMyOtherBool ; 
+
+
+#+End_src
+#+REVEAL: split
+
+ 
+- [[file:~/Dropbox/orgfiles/img/animations/dec-code.gif]]
+
+
+*** 2 Semi-Colons divide all statements
+ - semi colons are how you count state to state
+   - ST is based on PASCAL, uses Logical Language 
+   - statements move from ; to ; OR Key to ;           
+ 
+
+*** 3 Whitespace has no meaning
+     - Should be used for clarity 
+FIXME(TODO #+EXAMPLE)
+
+*** # 4 Statements give instructions, to evaluate expressions, based on condition
+#+ATTR_Reveal: :frag roll_in
+ - There are 3 Kinds of statements 
+#+ATTR_Reveal: :frag roll_in
+   - Conditional 
+#+ATTR_Reveal: :frag roll_in
+   - Iterative  
+#+ATTR_Reveal: :frag roll_in
+   - Execution Control 
+
+#+REVEAL: split
+FIXME: TODO
+#+Begin_Src iec61131
+
+ VAR 
+   bMyBool : BOOL; // Commenting a single line
+   bMyOtherBool : BOOL := TRUE  (* Multi Line
+                                   Comment Test*)
+   iMyDint: DINT;  (*Anther type multi line *)
+ END_VAR  bMyBool := bMyOtherBool ; 
+#+End_src 
+
+
+*** #5 Colon is the assignment Operator 
+
+- when the Assignment Operator and Equality operator are combined the assignment is:
+the value of Var 2 to the Value of Var 1
+FIXME(TODO: Add GIF)
+
+
+** Calling Standard Functions
+Simple Demo :
+
+#+Begin_Src  iec61131
+VAR
+  Motor1: BOOL; 
+  Motor2: BOOL; 
+  TIMER1: TON:
+  STOP: BOOL;
+  START: BOOL; 
+END_VAR
+#+END_SRC
+
+
+** Conditionals are 
+#+ATTR_Reveal: :frag roll_in
+-Expressions that result in Boolean evaluations using the run time
+-to analyze for True / False to take action
+-IF THEN ELSE ELIF END_IF 
+
+*** Simple IF > Expression                               
+
+#+Begin_Src  iec61131
+If Count =< Count+1 THEN
+    Count := Count + 1; 
+END_IF
+#+END_SRC
+
+
+*** Simple CASE Statement 
+
+FIXME (TODO replace with case)
+#+Begin_Src  iec61131
+If Count =< Count+1 THEN
+    Count := Count + 1; 
+END_IF
+#+END_SRC
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+# reveal tags 
+# reveal_root: /Users/twinflame_automation/Documents/G/GitHub/reveal.js
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_width:1200 reveal_height:800 
+#+OPTIONS: toc:nil 
+# OPTIONS: org-reveal-title-slide: %t %a %e %d
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: league 
+#+REVEAL_POSTAMBLE: <p> Created by Scooter. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+# REVEAL_EXTRA_CSS: ./local.css
+
+
+
+
+IF this line is operating in mode 3 the system should trigger moter 2 and 3 from the timer 
+
+#+Begin_src  iec61131
+  if          blah and 
+              blah then
+
+#+END_SRC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
